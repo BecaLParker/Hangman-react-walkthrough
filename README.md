@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Hangman in React
+This project is for me to learn using React.
+
+## Credits
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I used followed this tutorial: https://www.youtube.com/watch?v=jj0W8tYX_q8 , which uses vanilla JS from (https://github.com/bradtraversy/vanillawebprojects/tree/master/hangman)
 
 ## Available Scripts
 
