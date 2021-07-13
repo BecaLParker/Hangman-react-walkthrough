@@ -11,5 +11,12 @@ test('renders Figure', () => {
   render(<App />);
   const myFigure = screen.getByText(/Death awaits.../i);
   expect(myFigure).toBeInTheDocument();
-  // TODO: Write a more rigerous test of the figure component being rendered
+  // TODO: Write a more rigorous test of the figure component being rendered
+});
+
+test('renders WrongLetters', () => {
+  render(<App />);
+  const myWrongLetters = screen.getByText(/Incorrect guesses:/i);
+  expect(myWrongLetters).toBeInTheDocument();
+  // TODO: Write a more rigorous test of the WrongLetters component being rendered
 });
