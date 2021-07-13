@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <Header />
-      <Figure />
+      <div className="game-container">
+        <Figure />
+      </div>
     </>
   );
 }
