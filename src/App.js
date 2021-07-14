@@ -7,7 +7,9 @@ import './App.css';
 
 function App() {
   const [playable, setPlayable] = useState(true);
-  
+  const [correctLetters, setCorrectLetters] = useState([]);
+  const [wrongLetters, setWrongLetters] = useState([]);
+
   return (
     <>
       <Header />
