@@ -6,6 +6,8 @@ import Word from './components/Word';
 import './App.css';
 
 function App() {
+  const [playable, setPlayable] = useState(true);
+  
   return (
     <>
       <Header />
