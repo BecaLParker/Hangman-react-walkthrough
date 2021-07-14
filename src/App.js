@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState } from 'react';
 import Header from './components/Header'; 
 import Figure from './components/Figure';
 import WrongLetters from './components/WrongLetters';
 import Word from './components/Word';
 import './App.css';
+
+const words = ['react', 'javascript', 'makers'];
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+
 
 function App() {
   const [playable, setPlayable] = useState(true);
@@ -16,7 +20,7 @@ function App() {
       <div className="game-container">
         <Figure />
         <WrongLetters />
-        <Word />
+        <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
     </>
   );
